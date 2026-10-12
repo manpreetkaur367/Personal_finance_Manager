@@ -1,0 +1,43 @@
+.form-card {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.field-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.form-wrap {
+  margin-bottom: 18px;
+}
+
+@media (max-width: 640px) {
+  .field-row {
+    grid-template-columns: 1fr;
+  }
+}
+.invitation-card { align-self: center; }
+.invitation-details { display: grid; gap: 14px; color: var(--muted); }
+.invitation-details > p:first-child { color: var(--text); line-height: 1.7; }
+.invitation-details strong { color: var(--text); }
+.invitation-status { width: fit-content; padding: 5px 9px; border-radius: 999px; color: #fbbf24; background: rgba(251,191,36,.1); font-size: .82rem; }
+.invitation-auth-prompt { display: grid; gap: 13px; }
+.invitation-auth-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.invitation-auth-actions a { display: inline-flex; justify-content: center; align-items: center; }
+.pending-invitations { display: grid; gap: 9px; margin-top: 10px; }
+.pending-invitations h4 { margin: 4px 0; color: var(--muted); font-size: .85rem; }
+.pending-invitations .member-row { flex-wrap: wrap; }
